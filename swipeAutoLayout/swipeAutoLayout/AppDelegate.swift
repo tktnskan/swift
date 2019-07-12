@@ -16,16 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow()
-        window?.makeKeyAndVisible()
+//        window = UIWindow()
+//        window?.makeKeyAndVisible()
         
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        let swipingController = SwipingController(collectionViewLayout: layout)
-        window?.rootViewController = swipingController
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window?.rootViewController = ViewController()
-//        self.window?.makeKeyAndVisible()
+//        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .horizontal
+//        let swipingController = SwipingController(collectionViewLayout: layout)
+//        window?.rootViewController = swipingController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = FirstPage()
+        self.window?.makeKeyAndVisible()
         
         return true
     }

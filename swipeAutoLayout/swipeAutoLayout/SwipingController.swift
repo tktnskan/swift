@@ -8,6 +8,48 @@
 
 import UIKit
 
+class FirstPage: UIViewController {
+    private let button: UIButton = {
+        let bt = UIButton(type: .system)
+        bt.setTitle("click here", for: .normal)
+        bt.setTitleColor(.black, for: .normal)
+        return bt
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupUI()
+        
+//        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
+        addTargets()
+    }
+    
+    @objc
+    private func userDidClickOnButton() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let swipingController = SwipingController(collectionViewLayout: layout)
+        present(swipingController, animated: true, completion: nil)
+    }
+    
+    private func setupUI() {
+        view.backgroundColor = .white
+        
+        view.addSubview(button)
+        
+        button.frame = CGRect(origin: .zero, size: CGSize(width: 200, height: 30))
+        button.center = view.center
+        button.widthAnchor.constraint(equalToConstant: 200)
+        button.heightAnchor.constraint(equalToConstant: 30)
+    }
+    
+    private func addTargets() {
+        button.addTarget(self, action: #selector(userDidClickOnButton), for: .touchUpInside)
+    }
+}
+
 
 class SwipingController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -38,8 +80,23 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         return button
     }()
     
+    private let prevButton: UIButton = {
+        let bt = UIButton(type: .system)
+        bt.setTitle("<-List", for: .normal)
+        bt.setTitleColor(.red, for: .normal)
+        bt.translatesAutoresizingMaskIntoConstraints = false
+        bt.addTarget(self, action: #selector(userDidClickOnButton2), for: .touchUpInside)
+        
+        return bt
+    }()
+    
+    @objc
+    private func userDidClickOnButton2() {
+        let firstPage = FirstPage()
+        present(firstPage, animated: true, completion: nil)
+    }
+    
     @objc private func handleNext() {
-        print("trying to advance to next")
         
         let nextIndex = min(pageControl.currentPage + 1, pages.count - 1)
         let indexPath = IndexPath(item: nextIndex, section: 0)
@@ -64,14 +121,17 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     }()
     
     fileprivate func setupButton() {
-        view.addSubview(previousButton)
         
         let bottomControlsStackView = UIStackView(arrangedSubviews: [previousButton, pageControl, nextButton])
         
         bottomControlsStackView.translatesAutoresizingMaskIntoConstraints = false
         bottomControlsStackView.distribution = .fillEqually
         
+        view.addSubview(prevButton)
         view.addSubview(bottomControlsStackView)
+        
+        prevButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 30)
+        prevButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30)
         
         NSLayoutConstraint.activate([
             bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
@@ -91,12 +151,12 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         super.viewDidLoad()
         
         setupButton()
-        
         collectionView?.backgroundColor = .white
         collectionView?.register(PageCell.self, forCellWithReuseIdentifier: "cellId")
         collectionView?.isPagingEnabled = true
         
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0

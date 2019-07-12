@@ -36,6 +36,16 @@ class PageCell: UICollectionViewCell {
         return imageview
     }()
     
+//    let prevButton: UIButton = {
+//        let bt = UIButton(type: .system)
+//        bt.setTitle("list", for: .normal)
+//        bt.setTitleColor(.red, for: .normal)
+//        bt.translatesAutoresizingMaskIntoConstraints = false
+//        bt.contentMode = .scaleAspectFit
+//        
+//        return bt
+//    }()
+    
     private let descriptionTextView: UITextView = {
         let textView = UITextView()
         
@@ -62,6 +72,7 @@ class PageCell: UICollectionViewCell {
     }
     
     private func setupUI() {
+        
         let topImageContainerView = UIView()
         //        topImageContainerView.backgroundColor = .blue
         addSubview(topImageContainerView)
@@ -79,6 +90,10 @@ class PageCell: UICollectionViewCell {
         bnCuteImageView.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor).isActive = true
         bnCuteImageView.heightAnchor.constraint(equalTo: topImageContainerView.heightAnchor, multiplier: 0.5).isActive = true
         
+//        topImageContainerView.addSubview(prevButton)
+//
+//        prevButton.centerXAnchor.constraint(equalTo: topImageContainerView.centerXAnchor, constant: -120).isActive = true
+//        prevButton.centerYAnchor.constraint(equalTo: topImageContainerView.centerYAnchor, constant: -100).isActive = true
         
         topImageContainerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 0.5).isActive = true
         
