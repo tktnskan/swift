@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,10 +15,13 @@
 		D1E6168D22D4DFC500A3D6A4 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6168C22D4DFC500A3D6A4 /* SwipingController.swift */; };
 		D1E6168F22D4E5BB00A3D6A4 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6168E22D4E5BB00A3D6A4 /* PageCell.swift */; };
 		D1E6169122D4ED2B00A3D6A4 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6169022D4ED2B00A3D6A4 /* Page.swift */; };
+		D1E6169B22DD7ADF00A3D6A4 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6169A22DD7ADE00A3D6A4 /* WeatherDataModel.swift */; };
+		FF587590413788F13597BAFB /* Pods_swipeAutoLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6B936C8FB67C3271778C48 /* Pods_swipeAutoLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D1E6167722CF747400A3D6A4 /* swipeAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swipeAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8152DBDCB081A1662357DCE3 /* Pods-swipeAutoLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swipeAutoLayout.debug.xcconfig"; path = "Target Support Files/Pods-swipeAutoLayout/Pods-swipeAutoLayout.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6B936C8FB67C3271778C48 /* Pods_swipeAutoLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swipeAutoLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E6167A22CF747400A3D6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E6167C22CF747400A3D6A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1E6167F22CF747400A3D6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		D1E6168C22D4DFC500A3D6A4 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		D1E6168E22D4E5BB00A3D6A4 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		D1E6169022D4ED2B00A3D6A4 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		D1E6169922DD52CC00A3D6A4 /* swipeAutoLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swipeAutoLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E6169A22DD7ADE00A3D6A4 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		DE3C671B787C3AC87E672AD9 /* Pods-swipeAutoLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swipeAutoLayout.release.xcconfig"; path = "Target Support Files/Pods-swipeAutoLayout/Pods-swipeAutoLayout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,26 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF587590413788F13597BAFB /* Pods_swipeAutoLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70C8D657E25A16C7C139F4D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8152DBDCB081A1662357DCE3 /* Pods-swipeAutoLayout.debug.xcconfig */,
+				DE3C671B787C3AC87E672AD9 /* Pods-swipeAutoLayout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8654652A41E12B62D050CA79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6B936C8FB67C3271778C48 /* Pods_swipeAutoLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1E6166E22CF747400A3D6A4 = {
 			isa = PBXGroup;
 			children = (
 				D1E6167922CF747400A3D6A4 /* swipeAutoLayout */,
-				D1E6167822CF747400A3D6A4 /* Products */,
+				70C8D657E25A16C7C139F4D2 /* Pods */,
+				8654652A41E12B62D050CA79 /* Frameworks */,
+				D1E6169922DD52CC00A3D6A4 /* swipeAutoLayout.app */,
 			);
-			sourceTree = "<group>";
-		};
-		D1E6167822CF747400A3D6A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D1E6167722CF747400A3D6A4 /* swipeAutoLayout.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D1E6167922CF747400A3D6A4 /* swipeAutoLayout */ = {
@@ -69,6 +87,7 @@
 				D1E6168C22D4DFC500A3D6A4 /* SwipingController.swift */,
 				D1E6168E22D4E5BB00A3D6A4 /* PageCell.swift */,
 				D1E6169022D4ED2B00A3D6A4 /* Page.swift */,
+				D1E6169A22DD7ADE00A3D6A4 /* WeatherDataModel.swift */,
 			);
 			path = swipeAutoLayout;
 			sourceTree = "<group>";
@@ -80,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1E6168922CF747500A3D6A4 /* Build configuration list for PBXNativeTarget "swipeAutoLayout" */;
 			buildPhases = (
+				85DCCC3C3A2911D8F999B0EA /* [CP] Check Pods Manifest.lock */,
 				D1E6167322CF747400A3D6A4 /* Sources */,
 				D1E6167422CF747400A3D6A4 /* Frameworks */,
 				D1E6167522CF747400A3D6A4 /* Resources */,
+				E325BF7612207EA55AB8E3BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -90,7 +111,7 @@
 			);
 			name = swipeAutoLayout;
 			productName = swipeAutoLayout;
-			productReference = D1E6167722CF747400A3D6A4 /* swipeAutoLayout.app */;
+			productReference = D1E6169922DD52CC00A3D6A4 /* swipeAutoLayout.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +138,7 @@
 				Base,
 			);
 			mainGroup = D1E6166E22CF747400A3D6A4;
-			productRefGroup = D1E6167822CF747400A3D6A4 /* Products */;
+			productRefGroup = D1E6166E22CF747400A3D6A4;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -139,6 +160,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85DCCC3C3A2911D8F999B0EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swipeAutoLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E325BF7612207EA55AB8E3BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swipeAutoLayout/Pods-swipeAutoLayout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swipeAutoLayout/Pods-swipeAutoLayout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swipeAutoLayout/Pods-swipeAutoLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1E6167322CF747400A3D6A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,6 +209,7 @@
 			files = (
 				D1E6167D22CF747400A3D6A4 /* ViewController.swift in Sources */,
 				D1E6167B22CF747400A3D6A4 /* AppDelegate.swift in Sources */,
+				D1E6169B22DD7ADF00A3D6A4 /* WeatherDataModel.swift in Sources */,
 				D1E6168F22D4E5BB00A3D6A4 /* PageCell.swift in Sources */,
 				D1E6168D22D4DFC500A3D6A4 /* SwipingController.swift in Sources */,
 				D1E6169122D4ED2B00A3D6A4 /* Page.swift in Sources */,
@@ -292,6 +356,7 @@
 		};
 		D1E6168A22CF747500A3D6A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8152DBDCB081A1662357DCE3 /* Pods-swipeAutoLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +375,7 @@
 		};
 		D1E6168B22CF747500A3D6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE3C671B787C3AC87E672AD9 /* Pods-swipeAutoLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
