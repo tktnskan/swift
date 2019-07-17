@@ -11,6 +11,7 @@ import CoreLocation
 import Alamofire
 import SwiftyJSON
 
+
 class FirstPage: UIViewController, CLLocationManagerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
@@ -20,6 +21,17 @@ class FirstPage: UIViewController, CLLocationManagerDelegate, UIImagePickerContr
     
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
+    
+    private var homeButton: UIButton = {
+        let hB = UIButton(type: .system)
+        hB.setTitle("BACK", for: .normal)
+        hB.setTitleColor(.white, for: .normal)
+        hB.backgroundColor = UIColor.black
+        hB.layer.cornerRadius = 5
+        hB.translatesAutoresizingMaskIntoConstraints = false
+        
+        return hB
+    }()
     
     private var cityLabel: UILabel! = {
         let cL = UILabel()
@@ -234,12 +246,21 @@ class FirstPage: UIViewController, CLLocationManagerDelegate, UIImagePickerContr
             
             getWeatherData(url: WEATHER_URL, parameters: cityName)
             self.view.endEditing(true)
+            searchCity.text = ""
             print(searchCity!)
         }
+    }
+    
+    @objc
+    private func userClickHome() {
+        let Intro = IntroController()
+        
+        present(Intro, animated: true, completion: nil)
     }
 
     private func setupUI() {
         view.backgroundColor = .white
+        view.addSubview(homeButton)
         view.addSubview(imageView)
         view.addSubview(button)
         view.addSubview(button2)
@@ -248,6 +269,9 @@ class FirstPage: UIViewController, CLLocationManagerDelegate, UIImagePickerContr
         view.addSubview(weatherIcon)
         view.addSubview(searchCity)
         view.addSubview(searchButton)
+        
+        homeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
+        homeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         
         imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80).isActive = true
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -277,6 +301,7 @@ class FirstPage: UIViewController, CLLocationManagerDelegate, UIImagePickerContr
         button.addTarget(self, action: #selector(userDidClickOnButton), for: .touchUpInside)
         button2.addTarget(self, action: #selector(userDidClickOnButton2), for: .touchUpInside)
         searchButton.addTarget(self, action: #selector(userDidClickOnButoon3), for: .touchUpInside)
+        homeButton.addTarget(self, action: #selector(userClickHome), for: .touchUpInside)
     }
     
     
@@ -290,6 +315,9 @@ extension UIImage {
     }
 }
 
+extension UIColor {
+    static var mainPink = UIColor(red: 232/255, green: 68/255, blue: 133/255, alpha: 1)
+}
 
 class SwipingController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -322,8 +350,10 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
     
     private let prevButton: UIButton = {
         let bt = UIButton(type: .system)
-        bt.setTitle("<-List", for: .normal)
-        bt.setTitleColor(.red, for: .normal)
+        bt.setTitle("BACK", for: .normal)
+        bt.setTitleColor(.white, for: .normal)
+        bt.backgroundColor = UIColor.black
+        bt.layer.cornerRadius = 5
         bt.translatesAutoresizingMaskIntoConstraints = false
         bt.addTarget(self, action: #selector(userDidClickOnButton2), for: .touchUpInside)
         
@@ -370,8 +400,8 @@ class SwipingController: UICollectionViewController, UICollectionViewDelegateFlo
         view.addSubview(prevButton)
         view.addSubview(bottomControlsStackView)
         
-        prevButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 30)
-        prevButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30)
+        prevButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5).isActive = true
+        prevButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5).isActive = true
         
         NSLayoutConstraint.activate([
             bottomControlsStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),

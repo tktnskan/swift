@@ -18,7 +18,6 @@ protocol ChangeCityDelegate {
 class ChangeCityViewController: UIViewController {
     
     var delegate : ChangeCityDelegate?
-    
     //This is the pre-linked IBOutlets to the text field:
     @IBOutlet weak var changeCityTextField: UITextField!
 

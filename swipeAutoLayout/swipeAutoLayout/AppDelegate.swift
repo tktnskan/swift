@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let swipingController = SwipingController(collectionViewLayout: layout)
 //        window?.rootViewController = swipingController
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = FirstPage()
+        self.window?.rootViewController = IntroController()
         self.window?.makeKeyAndVisible()
         
         return true
