@@ -1,28 +1,30 @@
 //
-//  CollectionViewController.swift
+//  PhotoViewController.swift
 //  NoJapan
 //
-//  Created by Jinyung Yoon on 24/07/2019.
+//  Created by Jinyung Yoon on 26/07/2019.
 //  Copyright © 2019 Jinyung Yoon. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "cell"
 var cellColor = true
-private let JI = JapanItem()
+private let JI = JapanItems()
 
-class CollectionViewController: UICollectionViewController {
-
+final class PhotoViewController: UICollectionViewController {
+    @IBAction func GoBarcode(_ sender: Any) {
+        print("hi")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-//        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        // Register cell classes
+        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -51,14 +53,13 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! JapanItem
-    
-        // Configure the cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)        
         cell.backgroundColor = .black
-        cell.description = "hi"
-        cell.title = "good"
-        cell.alter = "Nothing"
-        
+//        cell.itemTitle.text = "유니클로"
+//        cell.itemDescription.text = "의류기업"
+//        cell.itemAlter.text = "지오다노"
+        // Configure the cell
+    
         return cell
     }
 

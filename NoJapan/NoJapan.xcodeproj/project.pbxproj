@@ -7,119 +7,130 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE31EC79D1D70EE137CA3471 /* Pods_NoJapan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3274A9A2AB93709B7155B46 /* Pods_NoJapan.framework */; };
-		D1EE05E022E91D80003ECFD3 /* JapanItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE05DF22E91D80003ECFD3 /* JapanItemStore.swift */; };
-		D1EE05E222E91DD3003ECFD3 /* JapanItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE05E122E91DD3003ECFD3 /* JapanItem.swift */; };
-		D1F0D88C22E8231C00332534 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0D88B22E8231C00332534 /* AppDelegate.swift */; };
-		D1F0D88E22E8231C00332534 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0D88D22E8231C00332534 /* ViewController.swift */; };
-		D1F0D89122E8231C00332534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F0D88F22E8231C00332534 /* Main.storyboard */; };
-		D1F0D89322E8231D00332534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F0D89222E8231D00332534 /* Assets.xcassets */; };
-		D1F0D89622E8231D00332534 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1F0D89422E8231D00332534 /* LaunchScreen.storyboard */; };
-		D1F0D89E22E8253000332534 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0D89D22E8253000332534 /* CollectionViewController.swift */; };
-		D1F0D8A022E8269700332534 /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0D89F22E8269700332534 /* BarcodeViewController.swift */; };
+		36A4247CA41B9FD8B6423F4E /* Pods_NoJapan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8347C9152BB10FBCF22E3CB4 /* Pods_NoJapan.framework */; };
+		D12FD64522EA85BB004294AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD64422EA85BB004294AC /* AppDelegate.swift */; };
+		D12FD64722EA85BB004294AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD64622EA85BB004294AC /* HomeViewController.swift */; };
+		D12FD64A22EA85BB004294AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12FD64822EA85BB004294AC /* Main.storyboard */; };
+		D12FD64C22EA85BC004294AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12FD64B22EA85BC004294AC /* Assets.xcassets */; };
+		D12FD64F22EA85BC004294AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12FD64D22EA85BC004294AC /* LaunchScreen.storyboard */; };
+		D12FD65722EA8A62004294AC /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD65622EA8A62004294AC /* PhotoViewController.swift */; };
+		D12FD65922EA9048004294AC /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD65822EA9048004294AC /* CellCollectionViewCell.swift */; };
+		D12FD65F22EA9BD5004294AC /* JapanItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD65E22EA9BD5004294AC /* JapanItems.swift */; };
+		D12FD66122EA9BE2004294AC /* JapanItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12FD66022EA9BE2004294AC /* JapanItemStore.swift */; };
+		D1C294E222EAA8CD00C5488D /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C294E122EAA8CD00C5488D /* BarcodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		02311CE3A0953496681E0D96 /* Pods-NoJapan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoJapan.release.xcconfig"; path = "Target Support Files/Pods-NoJapan/Pods-NoJapan.release.xcconfig"; sourceTree = "<group>"; };
-		B3274A9A2AB93709B7155B46 /* Pods_NoJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1EE05DF22E91D80003ECFD3 /* JapanItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanItemStore.swift; sourceTree = "<group>"; };
-		D1EE05E122E91DD3003ECFD3 /* JapanItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanItem.swift; sourceTree = "<group>"; };
-		D1F0D88822E8231C00332534 /* NoJapan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoJapan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1F0D88B22E8231C00332534 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D1F0D88D22E8231C00332534 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D1F0D89022E8231C00332534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D1F0D89222E8231D00332534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D1F0D89522E8231D00332534 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D1F0D89722E8231D00332534 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1F0D89D22E8253000332534 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		D1F0D89F22E8269700332534 /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
-		F6DC7A1C6D083E0135A47440 /* Pods-NoJapan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoJapan.debug.xcconfig"; path = "Target Support Files/Pods-NoJapan/Pods-NoJapan.debug.xcconfig"; sourceTree = "<group>"; };
+		1D1EAB2310F226C9F9D89642 /* Pods-NoJapan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoJapan.release.xcconfig"; path = "Target Support Files/Pods-NoJapan/Pods-NoJapan.release.xcconfig"; sourceTree = "<group>"; };
+		8062CD3EBDF90468F5734E30 /* Pods-NoJapan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoJapan.debug.xcconfig"; path = "Target Support Files/Pods-NoJapan/Pods-NoJapan.debug.xcconfig"; sourceTree = "<group>"; };
+		8347C9152BB10FBCF22E3CB4 /* Pods_NoJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12FD64122EA85BB004294AC /* NoJapan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoJapan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12FD64422EA85BB004294AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D12FD64622EA85BB004294AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D12FD64922EA85BB004294AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D12FD64B22EA85BC004294AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D12FD64E22EA85BC004294AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D12FD65022EA85BC004294AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12FD65622EA8A62004294AC /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		D12FD65822EA9048004294AC /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
+		D12FD65E22EA9BD5004294AC /* JapanItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanItems.swift; sourceTree = "<group>"; };
+		D12FD66022EA9BE2004294AC /* JapanItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanItemStore.swift; sourceTree = "<group>"; };
+		D1C294E122EAA8CD00C5488D /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D1F0D88522E8231C00332534 /* Frameworks */ = {
+		D12FD63E22EA85BA004294AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE31EC79D1D70EE137CA3471 /* Pods_NoJapan.framework in Frameworks */,
+				36A4247CA41B9FD8B6423F4E /* Pods_NoJapan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		033490A83B0710B6C9234EA2 /* Frameworks */ = {
+		761FFEFC6505A5FDB1D5AF83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3274A9A2AB93709B7155B46 /* Pods_NoJapan.framework */,
+				8347C9152BB10FBCF22E3CB4 /* Pods_NoJapan.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		130732063B6F88DD45C53412 /* Pods */ = {
+		D12FD63822EA85BA004294AC = {
 			isa = PBXGroup;
 			children = (
-				F6DC7A1C6D083E0135A47440 /* Pods-NoJapan.debug.xcconfig */,
-				02311CE3A0953496681E0D96 /* Pods-NoJapan.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		D1EE05DE22E91D64003ECFD3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D1EE05DF22E91D80003ECFD3 /* JapanItemStore.swift */,
-				D1EE05E122E91DD3003ECFD3 /* JapanItem.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D1F0D87F22E8231C00332534 = {
-			isa = PBXGroup;
-			children = (
-				D1F0D88A22E8231C00332534 /* NoJapan */,
-				D1F0D88922E8231C00332534 /* Products */,
-				130732063B6F88DD45C53412 /* Pods */,
-				033490A83B0710B6C9234EA2 /* Frameworks */,
+				D12FD64322EA85BB004294AC /* NoJapan */,
+				D12FD64222EA85BB004294AC /* Products */,
+				FCB9DCD133566E5DF1885D8F /* Pods */,
+				761FFEFC6505A5FDB1D5AF83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		D1F0D88922E8231C00332534 /* Products */ = {
+		D12FD64222EA85BB004294AC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1F0D88822E8231C00332534 /* NoJapan.app */,
+				D12FD64122EA85BB004294AC /* NoJapan.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1F0D88A22E8231C00332534 /* NoJapan */ = {
+		D12FD64322EA85BB004294AC /* NoJapan */ = {
 			isa = PBXGroup;
 			children = (
-				D1EE05DE22E91D64003ECFD3 /* Model */,
-				D1F0D88B22E8231C00332534 /* AppDelegate.swift */,
-				D1F0D88D22E8231C00332534 /* ViewController.swift */,
-				D1F0D88F22E8231C00332534 /* Main.storyboard */,
-				D1F0D89D22E8253000332534 /* CollectionViewController.swift */,
-				D1F0D89222E8231D00332534 /* Assets.xcassets */,
-				D1F0D89422E8231D00332534 /* LaunchScreen.storyboard */,
-				D1F0D89722E8231D00332534 /* Info.plist */,
-				D1F0D89F22E8269700332534 /* BarcodeViewController.swift */,
+				D12FD65D22EA9B9F004294AC /* Controller */,
+				D12FD65C22EA9B97004294AC /* Model */,
+				D12FD64422EA85BB004294AC /* AppDelegate.swift */,
+				D12FD64822EA85BB004294AC /* Main.storyboard */,
+				D12FD65822EA9048004294AC /* CellCollectionViewCell.swift */,
+				D12FD64B22EA85BC004294AC /* Assets.xcassets */,
+				D12FD64D22EA85BC004294AC /* LaunchScreen.storyboard */,
+				D12FD65022EA85BC004294AC /* Info.plist */,
 			);
 			path = NoJapan;
+			sourceTree = "<group>";
+		};
+		D12FD65C22EA9B97004294AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D12FD65E22EA9BD5004294AC /* JapanItems.swift */,
+				D12FD66022EA9BE2004294AC /* JapanItemStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D12FD65D22EA9B9F004294AC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D12FD64622EA85BB004294AC /* HomeViewController.swift */,
+				D12FD65622EA8A62004294AC /* PhotoViewController.swift */,
+				D1C294E122EAA8CD00C5488D /* BarcodeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCB9DCD133566E5DF1885D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8062CD3EBDF90468F5734E30 /* Pods-NoJapan.debug.xcconfig */,
+				1D1EAB2310F226C9F9D89642 /* Pods-NoJapan.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1F0D88722E8231C00332534 /* NoJapan */ = {
+		D12FD64022EA85BA004294AC /* NoJapan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1F0D89A22E8231D00332534 /* Build configuration list for PBXNativeTarget "NoJapan" */;
+			buildConfigurationList = D12FD65322EA85BC004294AC /* Build configuration list for PBXNativeTarget "NoJapan" */;
 			buildPhases = (
-				ED865ACFE17EB6F04DF0029C /* [CP] Check Pods Manifest.lock */,
-				D1F0D88422E8231C00332534 /* Sources */,
-				D1F0D88522E8231C00332534 /* Frameworks */,
-				D1F0D88622E8231C00332534 /* Resources */,
-				9FCC7B023BD60D71A123A537 /* [CP] Embed Pods Frameworks */,
+				50C1C858D351C2DA1B05C4BC /* [CP] Check Pods Manifest.lock */,
+				D12FD63D22EA85BA004294AC /* Sources */,
+				D12FD63E22EA85BA004294AC /* Frameworks */,
+				D12FD63F22EA85BA004294AC /* Resources */,
+				1C8F96810A860F176016E047 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,25 +138,25 @@
 			);
 			name = NoJapan;
 			productName = NoJapan;
-			productReference = D1F0D88822E8231C00332534 /* NoJapan.app */;
+			productReference = D12FD64122EA85BB004294AC /* NoJapan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D1F0D88022E8231C00332534 /* Project object */ = {
+		D12FD63922EA85BA004294AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jinyung Yoon";
 				TargetAttributes = {
-					D1F0D88722E8231C00332534 = {
+					D12FD64022EA85BA004294AC = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = D1F0D88322E8231C00332534 /* Build configuration list for PBXProject "NoJapan" */;
+			buildConfigurationList = D12FD63C22EA85BA004294AC /* Build configuration list for PBXProject "NoJapan" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -153,31 +164,31 @@
 				en,
 				Base,
 			);
-			mainGroup = D1F0D87F22E8231C00332534;
-			productRefGroup = D1F0D88922E8231C00332534 /* Products */;
+			mainGroup = D12FD63822EA85BA004294AC;
+			productRefGroup = D12FD64222EA85BB004294AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1F0D88722E8231C00332534 /* NoJapan */,
+				D12FD64022EA85BA004294AC /* NoJapan */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D1F0D88622E8231C00332534 /* Resources */ = {
+		D12FD63F22EA85BA004294AC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F0D89622E8231D00332534 /* LaunchScreen.storyboard in Resources */,
-				D1F0D89322E8231D00332534 /* Assets.xcassets in Resources */,
-				D1F0D89122E8231C00332534 /* Main.storyboard in Resources */,
+				D12FD64F22EA85BC004294AC /* LaunchScreen.storyboard in Resources */,
+				D12FD64C22EA85BC004294AC /* Assets.xcassets in Resources */,
+				D12FD64A22EA85BB004294AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9FCC7B023BD60D71A123A537 /* [CP] Embed Pods Frameworks */ = {
+		1C8F96810A860F176016E047 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,7 +205,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoJapan/Pods-NoJapan-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED865ACFE17EB6F04DF0029C /* [CP] Check Pods Manifest.lock */ = {
+		50C1C858D351C2DA1B05C4BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,34 +230,35 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D1F0D88422E8231C00332534 /* Sources */ = {
+		D12FD63D22EA85BA004294AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F0D89E22E8253000332534 /* CollectionViewController.swift in Sources */,
-				D1F0D8A022E8269700332534 /* BarcodeViewController.swift in Sources */,
-				D1EE05E222E91DD3003ECFD3 /* JapanItem.swift in Sources */,
-				D1F0D88E22E8231C00332534 /* ViewController.swift in Sources */,
-				D1F0D88C22E8231C00332534 /* AppDelegate.swift in Sources */,
-				D1EE05E022E91D80003ECFD3 /* JapanItemStore.swift in Sources */,
+				D12FD64722EA85BB004294AC /* HomeViewController.swift in Sources */,
+				D12FD64522EA85BB004294AC /* AppDelegate.swift in Sources */,
+				D12FD65F22EA9BD5004294AC /* JapanItems.swift in Sources */,
+				D12FD65922EA9048004294AC /* CellCollectionViewCell.swift in Sources */,
+				D12FD66122EA9BE2004294AC /* JapanItemStore.swift in Sources */,
+				D12FD65722EA8A62004294AC /* PhotoViewController.swift in Sources */,
+				D1C294E222EAA8CD00C5488D /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D1F0D88F22E8231C00332534 /* Main.storyboard */ = {
+		D12FD64822EA85BB004294AC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D1F0D89022E8231C00332534 /* Base */,
+				D12FD64922EA85BB004294AC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D1F0D89422E8231D00332534 /* LaunchScreen.storyboard */ = {
+		D12FD64D22EA85BC004294AC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D1F0D89522E8231D00332534 /* Base */,
+				D12FD64E22EA85BC004294AC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -254,7 +266,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D1F0D89822E8231D00332534 /* Debug */ = {
+		D12FD65122EA85BC004294AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -315,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		D1F0D89922E8231D00332534 /* Release */ = {
+		D12FD65222EA85BC004294AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -370,9 +382,9 @@
 			};
 			name = Release;
 		};
-		D1F0D89B22E8231D00332534 /* Debug */ = {
+		D12FD65422EA85BC004294AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6DC7A1C6D083E0135A47440 /* Pods-NoJapan.debug.xcconfig */;
+			baseConfigurationReference = 8062CD3EBDF90468F5734E30 /* Pods-NoJapan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,9 +401,9 @@
 			};
 			name = Debug;
 		};
-		D1F0D89C22E8231D00332534 /* Release */ = {
+		D12FD65522EA85BC004294AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02311CE3A0953496681E0D96 /* Pods-NoJapan.release.xcconfig */;
+			baseConfigurationReference = 1D1EAB2310F226C9F9D89642 /* Pods-NoJapan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,25 +423,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1F0D88322E8231C00332534 /* Build configuration list for PBXProject "NoJapan" */ = {
+		D12FD63C22EA85BA004294AC /* Build configuration list for PBXProject "NoJapan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1F0D89822E8231D00332534 /* Debug */,
-				D1F0D89922E8231D00332534 /* Release */,
+				D12FD65122EA85BC004294AC /* Debug */,
+				D12FD65222EA85BC004294AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1F0D89A22E8231D00332534 /* Build configuration list for PBXNativeTarget "NoJapan" */ = {
+		D12FD65322EA85BC004294AC /* Build configuration list for PBXNativeTarget "NoJapan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D1F0D89B22E8231D00332534 /* Debug */,
-				D1F0D89C22E8231D00332534 /* Release */,
+				D12FD65422EA85BC004294AC /* Debug */,
+				D12FD65522EA85BC004294AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D1F0D88022E8231C00332534 /* Project object */;
+	rootObject = D12FD63922EA85BA004294AC /* Project object */;
 }

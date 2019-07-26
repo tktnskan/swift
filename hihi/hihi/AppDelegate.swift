@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  NoJapan
+//  hihi
 //
 //  Created by Jinyung Yoon on 26/07/2019.
 //  Copyright © 2019 Jinyung Yoon. All rights reserved.

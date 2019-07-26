@@ -1,8 +1,8 @@
 //
-//  Page.swift
+//  JapanItemStore.swift
 //  NoJapan
 //
-//  Created by Jinyung Yoon on 25/07/2019.
+//  Created by Jinyung Yoon on 26/07/2019.
 //  Copyright © 2019 Jinyung Yoon. All rights reserved.
 //
 
@@ -17,7 +17,7 @@ enum RuntimeError: Error {
 class JapanItemStore {
     var realm: Realm?
     
-    public func saveJapanItems(_ item: JapanItem) throws {
+    public func saveJapanItems(_ item: JapanItems) throws {
         if (realm != nil) {
             try! realm!.write {
                 realm!.add(item)
@@ -34,26 +34,26 @@ class JapanItemStore {
         }
     }
     
-    public func findItemsByField(_ field: String, value: String) throws -> Results<JapanItem> {
+    public func findItemsByField(_ field: String, value: String) throws -> Results<JapanItems> {
         if (realm != nil) {
             let predicate = NSPredicate(format: "%K == %@", field, value)
-            return realm!.objects(JapanItem.self).filter(predicate)
+            return realm!.objects(JapanItems.self).filter(predicate)
         } else {
             throw RuntimeError.NoRealmSet
         }
     }
     
-    public func findItemsByTitle(_ title: String) throws -> Results<JapanItem>
+    public func findItemsByTitle(_ title: String) throws -> Results<JapanItems>
     {
         return try findItemsByField("title", value: title)
     }
     
-    public func deleteJapanItem(_ japanitem: JapanItem) throw {
+    public func deleteJapanItem(_ japanitem: JapanItems) throws {
         
         if (realm != nil) {
             let predicate = NSPredicate(format: "title == %@ AND description == %@ AND alter == %@", japanitem.title, japanitem.description, japanitem.alter)
             
-            let targetItems = realm!.objects(JapanItem.self).filter(predicate)
+            let targetItems = realm!.objects(JapanItems.self).filter(predicate)
             
             var items = targetItems.makeIterator()
             while let item = items.next() {
@@ -66,11 +66,11 @@ class JapanItemStore {
         }
     }
     
-    public func makeNewJapanItem(_ title: String, description: String, alter: String) -> JapanItem
+    public func makeNewJapanItem(_ title: String, description: String, alter: String) -> JapanItems
     {
-        let newItem = JapanItem()
+        let newItem = JapanItems()
         newItem.title = title
-        newItem.description = description
+        newItem.descrip = description
         newItem.alter = alter
         
         return newItem

@@ -1,4 +1,15 @@
 //
+//  BarcodeViewController.swift
+//  NoJapan
+//
+//  Created by Jinyung Yoon on 26/07/2019.
+//  Copyright © 2019 Jinyung Yoon. All rights reserved.
+//
+
+import Foundation
+
+
+//
 //  ViewController.swift
 //  barcode
 //
@@ -15,8 +26,8 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     var comment: String = ""
     let session = AVCaptureSession()
     let sessionQueue = DispatchQueue(label: "Session Queue")
-    
-    
+//
+//
     override func loadView() {
         cameraView = CameraView()
         
@@ -26,8 +37,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Barcode Scanner"
-        
+//        title = "Barcode Scanner"
         session.beginConfiguration()
         
         if let videoDevice = AVCaptureDevice.default(for: .video) {
@@ -107,7 +117,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             
             isShowingAlert = true
             
-
+            
             
             alertController.addAction(UIAlertAction(title: "OK", style: .default) { action in
                 self.isShowingAlert = false
@@ -154,3 +164,4 @@ class CameraView: UIView {
     }
     
 }
+
