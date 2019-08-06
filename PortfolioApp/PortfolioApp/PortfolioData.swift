@@ -6,4 +6,10 @@
 //  Copyright © 2019 Jinyung Yoon. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class AboutMeData {
+    var title: String?
+    var contents: String?
+    var image: UIImage?
+}

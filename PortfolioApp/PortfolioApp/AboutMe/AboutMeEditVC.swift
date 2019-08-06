@@ -12,16 +12,21 @@ class AboutMeEditVC: UIViewController,UIImagePickerControllerDelegate, UINavigat
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    @IBOutlet var contents: UITextView!
-    @IBOutlet var preview: UIImageView!
+
+    @IBOutlet weak var contentsTitle: UILabel!
+    @IBOutlet weak var contents: UITextView!
+    @IBOutlet weak var previewTitle: UILabel!
+    @IBOutlet weak var preview: UIImageView!
     
     
     override func viewDidLoad() {
+        self.contentsTitle.text = "자기소개 수정"
+        self.previewTitle.text = "프로필 사진"
         self.contents.delegate = self
     }
     
+    
     @IBAction func save(_ sender: Any) {
-        // 내용을 입력하지 않았을 경우, 경고한다.
         guard self.contents.text?.isEmpty == false else {
             let alert = UIAlertController(title: nil, message: "내용을 입력해주세요", preferredStyle: .alert)
             
@@ -39,7 +44,6 @@ class AboutMeEditVC: UIViewController,UIImagePickerControllerDelegate, UINavigat
     }
     
     @IBAction func pickImg(_ sender: Any) {
-        
         let select = UIAlertController(title: "이미지를 선택해주세요", message: nil, preferredStyle: .actionSheet)
         
         select.addAction(UIAlertAction(title: "카메라", style: .default) { (_) in self.selectedPhoto(source: .camera)})
@@ -48,9 +52,8 @@ class AboutMeEditVC: UIViewController,UIImagePickerControllerDelegate, UINavigat
         
         
         self.present(select, animated: false)
-        
-        
     }
+
     
     func selectedPhoto(source: UIImagePickerController.SourceType) {
         guard UIImagePickerController.isSourceTypeAvailable(source) == true else {
