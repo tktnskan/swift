@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PortfolioApp
 //
-//  Created by Jinyung Yoon on 05/08/2019.
+//  Created by Jinyung Yoon on 06/08/2019.
 //  Copyright © 2019 Jinyung Yoon. All rights reserved.
 //
 
@@ -13,7 +13,10 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
     var aboutme = AboutMeData()
+    var postlist = [PostData]()
+    var portfoliolist = [PortfolioData]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
